@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Chloropleth Map</title>
+  </head>
+  <body>
+    <h2 id="title">USA Education Data</h2>
+    <div id="description">
+      People over of 25 with a bachelors degree or higher
+    </div>
+    <svg id="canvas">
+
+    </svg>
+
+    <svg id="legend">
+      <g>
+        <rect x="10" y="0" width="40" height="40" fill="LightBlue"></rect>
+        <text x="60" y="20" fill="white">Variance of -1 or less</text>
+      </g>
+      <g>
+        <rect x="10" y="40" width="40" height="40" fill="Gray"></rect>
+        <text x="60" y="60" fill="white">On or Below Averages</text>
+      </g>
+      <g>
+        <rect x="10" y="80" width="40" height="40" fill="Orange"></rect>
+        <text x="60" y="100" fill="white">Above Averages/text>
+      </g>
+      <g>
+        <rect x="10" y="120" width="40" height="40" fill="Crimson"></rect>
+        <text x="60" y="140" fill="white">Variance of -1 or more</text>
+      </g>
+    </svg>
+    <div id="root"></div>
+    <script defer type="module" src="/src/App.jsx"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+  </body>
+</html>
